@@ -10,12 +10,12 @@ const Arrays=()=> {
       <h1 className='text-center text-5xl font-bold py-2'>CAR INFORMATION USING MAP</h1>
     <div className='flex justify-center gap-5'>
       {
-        car.map((veh)=>{
+        car.map((veh,index)=>{
           
           return(
             
             <div className='mt-3 border hover:border-black hover:shadow-lg hover:shadow-black h-full hover:font-semibold'>
-              <div>key={veh.id}</div>
+              key={index}
              <p>{veh.Image}</p> 
 
              <div className='bg-black text-white py-2'>
